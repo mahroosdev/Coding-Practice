@@ -73,3 +73,4 @@ After completing this lesson, you should know:
 * Paragraphs are used to display normal text.
 * Each paragraph starts with `<p>` and ends with `</p>`.
 * You can add multiple paragraphs to a webpage.
+
