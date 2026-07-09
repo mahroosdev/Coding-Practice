@@ -20,7 +20,7 @@ When a user clicks a link, the browser opens the page specified in the link.
 
 ```html
 <a href="https://example.com">Link Text</a>
-```
+``` 
 
 * `<a>` creates the link.
 * `href` specifies the destination.
