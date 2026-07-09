@@ -15,7 +15,7 @@ The `<img>` tag is used to display an image on a webpage.
 Unlike many HTML elements, the `<img>` tag does not have a closing tag.
 
 ---
-
+ 
 ## Syntax
 
 ```html
