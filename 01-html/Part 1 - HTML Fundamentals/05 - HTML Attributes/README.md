@@ -22,7 +22,7 @@ Attributes are written inside the opening tag.
 <tagname attribute="value">Content</tagname>
 ```
 
----
+--- 
 
 ## Example
 
