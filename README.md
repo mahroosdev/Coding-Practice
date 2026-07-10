@@ -89,7 +89,7 @@ Every lesson contains:
 ## Current Progress
 
 | Technology | Status |
-|------------|--------|
+| ------------ | -------- |
 | HTML | ✅ Completed |
 | CSS | 🔄 on going |
 | JavaScript | ⏳ Planned |
@@ -104,6 +104,6 @@ Every lesson contains:
 
 ## Author
 
-**Mahroos Mahthie**
+Mahroos Mahthie
 
 Junior Software Engineer
