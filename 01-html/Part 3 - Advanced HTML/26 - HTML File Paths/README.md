@@ -101,7 +101,7 @@ For example:
 <img src="images/sample-image.jpg" alt="Sample Image">
 ```
 
-4. Try changing the file name or folder name and refresh the browser. Notice that the image no longer appears because the file path is incorrect.
+1. Try changing the file name or folder name and refresh the browser. Notice that the image no longer appears because the file path is incorrect.
 
 ---
 
