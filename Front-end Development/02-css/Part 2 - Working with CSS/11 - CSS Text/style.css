@@ -1,0 +1,63 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.line-through-text {
+    text-decoration: line-through;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+.letter-spacing {
+    letter-spacing: 3px;
+}
+
+.word-spacing {
+    word-spacing: 10px;
+}
+
+.line-height {
+    line-height: 2;
+}
