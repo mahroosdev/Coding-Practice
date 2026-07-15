@@ -1,0 +1,28 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
+}
+
+.small-padding {
+    padding: 10px;
+}
+
+.large-padding {
+    padding: 40px;
+}
+
+.different-padding {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+}
