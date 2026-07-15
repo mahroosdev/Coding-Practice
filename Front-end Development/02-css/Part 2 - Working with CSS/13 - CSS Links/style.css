@@ -1,0 +1,43 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.basic-link {
+    color: blue;
+}
+
+.styled-link {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.styled-link:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+.button-link {
+    display: inline-block;
+    color: white;
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background-color: darkgreen;
+}
