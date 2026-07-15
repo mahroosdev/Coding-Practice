@@ -1,0 +1,40 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.unordered-list {
+    list-style-type: square;
+}
+
+.ordered-list {
+    list-style-type: upper-roman;
+}
+
+.no-marker-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.styled-list {
+    list-style-type: circle;
+    background-color: lightyellow;
+    padding: 20px 20px 20px 40px;
+}
+
+.styled-list li {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
