@@ -1,0 +1,29 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.small-box {
+    width: 250px;
+    height: 120px;
+}
+
+.large-box {
+    width: 500px;
+    height: 180px;
+}
+
+.percentage-box {
+    width: 70%;
+    height: 120px;
+}
