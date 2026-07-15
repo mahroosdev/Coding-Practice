@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.solid-border {
+    border: 3px solid darkblue;
+}
+
+.dashed-border {
+    border: 3px dashed darkgreen;
+}
+
+.dotted-border {
+    border: 3px dotted darkred;
+}
+
+.rounded-border {
+    border: 3px solid purple;
+    border-radius: 15px;
+}
