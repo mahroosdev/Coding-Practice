@@ -1,0 +1,44 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.before-text::before {
+    content: "Start: ";
+    color: darkred;
+    font-weight: bold;
+}
+
+.after-text::after {
+    content: " End.";
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.first-letter-text::first-letter {
+    color: darkred;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.first-line-text::first-line {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.selection-text::selection {
+    background-color: darkblue;
+    color: white;
+}
