@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin: 30px 0;
+    padding: 30px;
+}
+
+section h2 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+code {
+    font-family: monospace;
+}
+
+.code-example {
+    background-color: #222222;
+    color: lightgreen;
+    border-left: 5px solid darkblue;
+    margin: 20px 0;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.variable-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.variable-card {
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+}
+
+.variable-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.variable-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.reason-container {
+    display: flex;
+    gap: 20px;
+}
+
+.reason-card {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-top: 4px solid darkblue;
+    padding: 20px;
+}
+
+.reason-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.console-example {
+    background-color: #222222;
+    color: lightgreen;
+    border-left: 5px solid darkblue;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: monospace;
+}
+
+.console-example p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .reason-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    .variable-container {
+        grid-template-columns: 1fr;
+    }
+}
