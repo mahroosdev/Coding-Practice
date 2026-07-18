@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adding JavaScript to HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Adding JavaScript to HTML</h1>
+
+            <p>
+                Learning three ways to add JavaScript to a webpage.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>1. Inline JavaScript</h2>
+
+            <p>
+                Inline JavaScript is written directly inside an HTML element.
+            </p>
+
+            <button onclick="alert('Hello from inline JavaScript!')">
+                Try Inline JavaScript
+            </button>
+        </section>
+
+        <section>
+            <h2>2. Internal JavaScript</h2>
+
+            <p>
+                Internal JavaScript is written inside a
+                <code>&lt;script&gt;</code> element in the HTML file.
+            </p>
+
+            <div class="output-box">
+                Open the browser console to see the internal JavaScript
+                message.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. External JavaScript</h2>
+
+            <p>
+                External JavaScript is written in a separate file such as
+                <code>script.js</code>.
+            </p>
+
+            <p>
+                This is the recommended method for keeping larger projects
+                clean and organized.
+            </p>
+
+            <div class="output-box">
+                Open the browser console to see the external JavaScript
+                messages.
+            </div>
+        </section>
+
+        <section>
+            <h2>Which Method Should I Use?</h2>
+
+            <div class="method-container">
+
+                <div class="method-card">
+                    <h3>Inline</h3>
+
+                    <p>
+                        Useful for very small examples, but it can make HTML
+                        difficult to read.
+                    </p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Internal</h3>
+
+                    <p>
+                        Useful for small webpages that only need a little
+                        JavaScript.
+                    </p>
+                </div>
+
+                <div class="method-card recommended-method">
+                    <h3>External</h3>
+
+                    <p>
+                        Recommended because it keeps HTML and JavaScript in
+                        separate files.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <!-- Internal JavaScript -->
+    <script>
+        console.log("Hello from internal JavaScript!");
+    </script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
