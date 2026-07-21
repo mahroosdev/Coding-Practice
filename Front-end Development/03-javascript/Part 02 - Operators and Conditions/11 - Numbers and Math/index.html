@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Numbers</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript Numbers</h1>
+
+            <p>
+                Learning how JavaScript stores, calculates, converts,
+                and formats number values.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a JavaScript Number?</h2>
+
+            <p>
+                The number data type stores whole numbers, decimal numbers,
+                positive numbers, negative numbers, and zero.
+            </p>
+
+            <div class="code-box">
+                <code>const lessonNumber = 11;</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Whole Numbers and Decimal Numbers</h2>
+
+            <p>
+                JavaScript uses the same number data type for whole numbers
+                and decimal numbers.
+            </p>
+
+            <div class="number-container">
+
+                <div class="number-card">
+                    <h3>Whole Number</h3>
+
+                    <code>25</code>
+
+                    <p id="whole-number-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="number-card">
+                    <h3>Decimal Number</h3>
+
+                    <code>25.75</code>
+
+                    <p id="decimal-number-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Positive, Negative, and Zero</h2>
+
+            <p>
+                Number values can be positive, negative, or zero.
+            </p>
+
+            <div class="number-container three-columns">
+
+                <div class="number-card">
+                    <h3>Positive</h3>
+
+                    <code>50</code>
+
+                    <p id="positive-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="number-card">
+                    <h3>Negative</h3>
+
+                    <code>-20</code>
+
+                    <p id="negative-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="number-card">
+                    <h3>Zero</h3>
+
+                    <code>0</code>
+
+                    <p id="zero-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Performing Calculations</h2>
+
+            <p>
+                Number values can be used with arithmetic operators.
+            </p>
+
+            <div class="calculation-grid">
+
+                <div class="calculation-card">
+                    <h3>Addition</h3>
+                    <code>20 + 5</code>
+                    <p id="addition-output">Waiting...</p>
+                </div>
+
+                <div class="calculation-card">
+                    <h3>Subtraction</h3>
+                    <code>20 - 5</code>
+                    <p id="subtraction-output">Waiting...</p>
+                </div>
+
+                <div class="calculation-card">
+                    <h3>Multiplication</h3>
+                    <code>20 * 5</code>
+                    <p id="multiplication-output">Waiting...</p>
+                </div>
+
+                <div class="calculation-card">
+                    <h3>Division</h3>
+                    <code>20 / 5</code>
+                    <p id="division-output">Waiting...</p>
+                </div>
+
+                <div class="calculation-card">
+                    <h3>Remainder</h3>
+                    <code>20 % 6</code>
+                    <p id="remainder-output">Waiting...</p>
+                </div>
+
+                <div class="calculation-card">
+                    <h3>Exponentiation</h3>
+                    <code>5 ** 2</code>
+                    <p id="exponent-output">Waiting...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Numbers and Numeric Strings</h2>
+
+            <p>
+                A number written inside quotation marks becomes a string.
+            </p>
+
+            <div class="comparison-container">
+
+                <div class="comparison-card">
+                    <h3>Number</h3>
+
+                    <code>100</code>
+
+                    <p id="number-type-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>Numeric String</h3>
+
+                    <code>"100"</code>
+
+                    <p id="numeric-string-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="output-box" id="number-string-calculation-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Convert Values with Number()</h2>
+
+            <p>
+                The <code>Number()</code> function converts a value into a
+                number when possible.
+            </p>
+
+            <div class="code-box">
+                <code>Number("250")</code>
+            </div>
+
+            <div class="output-box" id="number-conversion-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Convert Whole Numbers with parseInt()</h2>
+
+            <p>
+                The <code>parseInt()</code> function reads and returns a
+                whole number.
+            </p>
+
+            <div class="code-box">
+                <code>parseInt("45.75")</code>
+            </div>
+
+            <div class="output-box" id="parse-int-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Convert Decimal Numbers with parseFloat()</h2>
+
+            <p>
+                The <code>parseFloat()</code> function reads and returns a
+                decimal number.
+            </p>
+
+            <div class="code-box">
+                <code>parseFloat("45.75")</code>
+            </div>
+
+            <div class="output-box" id="parse-float-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>8. NaN</h2>
+
+            <p>
+                <code>NaN</code> means Not a Number. It appears when
+                JavaScript cannot produce a valid numeric result.
+            </p>
+
+            <div class="code-box">
+                <code>Number("JavaScript")</code>
+            </div>
+
+            <div class="output-box" id="nan-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>9. Infinity</h2>
+
+            <p>
+                JavaScript can return <code>Infinity</code> when a number
+                becomes larger than its supported range or when dividing a
+                non-zero number by zero.
+            </p>
+
+            <div class="code-box">
+                <code>10 / 0</code>
+            </div>
+
+            <div class="output-box" id="infinity-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>10. Format Decimals with toFixed()</h2>
+
+            <p>
+                The <code>toFixed()</code> method formats a number using a
+                selected number of decimal places.
+            </p>
+
+            <div class="code-box">
+                <code>price.toFixed(2)</code>
+            </div>
+
+            <div class="output-box" id="fixed-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>11. Convert a Number to a String</h2>
+
+            <p>
+                The <code>toString()</code> method converts a number into
+                a string.
+            </p>
+
+            <div class="code-box">
+                <code>lessonNumber.toString()</code>
+            </div>
+
+            <div class="output-box" id="to-string-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>12. Decimal Precision</h2>
+
+            <p>
+                Some decimal calculations cannot be represented exactly
+                inside a computer.
+            </p>
+
+            <div class="code-box">
+                <code>0.1 + 0.2</code>
+            </div>
+
+            <div class="output-box" id="precision-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Number Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Example</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Whole Number</td>
+                            <td><code>25</code></td>
+                            <td>Stores an integer value</td>
+                        </tr>
+
+                        <tr>
+                            <td>Decimal Number</td>
+                            <td><code>25.75</code></td>
+                            <td>Stores a decimal value</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>Number()</code></td>
+                            <td><code>Number("25")</code></td>
+                            <td>Converts a value to a number</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>parseInt()</code></td>
+                            <td><code>parseInt("25.75")</code></td>
+                            <td>Returns a whole number</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>parseFloat()</code></td>
+                            <td><code>parseFloat("25.75")</code></td>
+                            <td>Returns a decimal number</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>NaN</code></td>
+                            <td><code>Number("Hello")</code></td>
+                            <td>Represents an invalid numeric result</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>Infinity</code></td>
+                            <td><code>10 / 0</code></td>
+                            <td>Represents an infinite numeric value</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>toFixed()</code></td>
+                            <td><code>price.toFixed(2)</code></td>
+                            <td>Formats decimal places</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>toString()</code></td>
+                            <td><code>number.toString()</code></td>
+                            <td>Converts a number to a string</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
