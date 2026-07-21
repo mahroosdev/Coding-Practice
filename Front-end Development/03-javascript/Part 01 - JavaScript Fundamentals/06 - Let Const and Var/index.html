@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Let, Const and Var</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Let, Const and Var</h1>
+
+            <p>
+                Learning the different ways to create JavaScript variables.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>JavaScript Variable Keywords</h2>
+
+            <p>
+                JavaScript provides three keywords for creating variables:
+                <code>let</code>, <code>const</code>, and <code>var</code>.
+            </p>
+
+            <div class="code-example">
+                <code>
+                    let learningStatus = "In Progress";<br>
+                    const courseName = "JavaScript";<br>
+                    var studentLevel = "Beginner";
+                </code>
+            </div>
+        </section>
+
+        <section>
+            <h2>Variable Output</h2>
+
+            <div class="variable-container">
+
+                <div class="variable-card">
+                    <h3>Let Variable</h3>
+
+                    <p class="keyword">let</p>
+
+                    <p id="let-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="variable-card">
+                    <h3>Const Variable</h3>
+
+                    <p class="keyword">const</p>
+
+                    <p id="const-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="variable-card">
+                    <h3>Var Variable</h3>
+
+                    <p class="keyword">var</p>
+
+                    <p id="var-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>When Should I Use Them?</h2>
+
+            <div class="comparison-container">
+
+                <div class="comparison-card">
+                    <h3>Use const</h3>
+
+                    <p>
+                        Use <code>const</code> when the variable should not
+                        receive a completely new value.
+                    </p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>Use let</h3>
+
+                    <p>
+                        Use <code>let</code> when the variable value needs to
+                        change later.
+                    </p>
+                </div>
+
+                <div class="comparison-card old-keyword">
+                    <h3>Avoid var for New Code</h3>
+
+                    <p>
+                        <code>var</code> is an older keyword. It may still
+                        appear in older JavaScript projects.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Simple Comparison</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th>Can Change Value?</th>
+                            <th>Recommended?</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>let</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+
+                        <tr>
+                            <td>const</td>
+                            <td>No reassignment</td>
+                            <td>Yes</td>
+                        </tr>
+
+                        <tr>
+                            <td>var</td>
+                            <td>Yes</td>
+                            <td>Usually no</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

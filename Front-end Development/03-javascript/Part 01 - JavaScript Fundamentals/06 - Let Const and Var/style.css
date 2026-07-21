@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin: 30px 0;
+    padding: 30px;
+}
+
+section h2 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+code {
+    font-family: monospace;
+}
+
+.code-example {
+    background-color: #222222;
+    color: lightgreen;
+    border-left: 5px solid darkblue;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.variable-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.variable-card {
+    background-color: #e6ecf5;
+    border-top: 5px solid darkblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.variable-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.variable-card p:last-child {
+    font-weight: bold;
+}
+
+.keyword {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    font-family: monospace;
+    padding: 5px 12px;
+}
+
+.comparison-container {
+    display: flex;
+    gap: 20px;
+}
+
+.comparison-card {
+    flex: 1;
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+}
+
+.comparison-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.old-keyword {
+    background-color: lightyellow;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid darkblue;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e6ecf5;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .variable-container {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
