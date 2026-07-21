@@ -1,1 +1,398 @@
- 
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript String Methods</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript String Methods</h1>
+
+            <p>
+                Learning how JavaScript reads, searches, cleans,
+                extracts, and changes string values.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a String Method?</h2>
+
+            <p>
+                A string method is a built-in JavaScript action that can be
+                used with a string.
+            </p>
+
+            <div class="code-box">
+                <code>courseName.toUpperCase()</code>
+            </div>
+
+            <p>
+                Most string methods use parentheses after the method name.
+            </p>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Convert Text to Uppercase</h2>
+
+            <p>
+                The <code>toUpperCase()</code> method converts letters
+                to uppercase.
+            </p>
+
+            <div class="code-box">
+                <code>text.toUpperCase()</code>
+            </div>
+
+            <div class="output-box" id="uppercase-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Convert Text to Lowercase</h2>
+
+            <p>
+                The <code>toLowerCase()</code> method converts letters
+                to lowercase.
+            </p>
+
+            <div class="code-box">
+                <code>text.toLowerCase()</code>
+            </div>
+
+            <div class="output-box" id="lowercase-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Remove Outer Spaces</h2>
+
+            <p>
+                The <code>trim()</code> method removes spaces from the
+                beginning and end of a string.
+            </p>
+
+            <div class="code-box">
+                <code>text.trim()</code>
+            </div>
+
+            <div class="output-box" id="trim-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Replace Text</h2>
+
+            <p>
+                The <code>replace()</code> method replaces matching text
+                with new text.
+            </p>
+
+            <div class="code-box">
+                <code>message.replace("HTML", "JavaScript")</code>
+            </div>
+
+            <div class="output-box" id="replace-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Read a Character</h2>
+
+            <p>
+                The <code>charAt()</code> method returns the character
+                at a selected index.
+            </p>
+
+            <div class="code-box">
+                <code>courseName.charAt(0)</code>
+            </div>
+
+            <div class="output-box" id="char-at-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Extract Text with slice()</h2>
+
+            <p>
+                The <code>slice()</code> method extracts part of a string.
+            </p>
+
+            <div class="code-box">
+                <code>courseName.slice(0, 4)</code>
+            </div>
+
+            <div class="output-box" id="slice-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Extract Text with substring()</h2>
+
+            <p>
+                The <code>substring()</code> method also extracts part
+                of a string.
+            </p>
+
+            <div class="code-box">
+                <code>courseName.substring(4, 10)</code>
+            </div>
+
+            <div class="output-box" id="substring-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>8. Check Whether Text Exists</h2>
+
+            <p>
+                The <code>includes()</code> method checks whether a string
+                contains selected text.
+            </p>
+
+            <div class="code-box">
+                <code>message.includes("JavaScript")</code>
+            </div>
+
+            <div class="output-box" id="includes-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>9. Check the Beginning of a String</h2>
+
+            <p>
+                The <code>startsWith()</code> method checks whether a string
+                begins with selected text.
+            </p>
+
+            <div class="code-box">
+                <code>message.startsWith("I am")</code>
+            </div>
+
+            <div class="output-box" id="starts-with-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>10. Check the End of a String</h2>
+
+            <p>
+                The <code>endsWith()</code> method checks whether a string
+                ends with selected text.
+            </p>
+
+            <div class="code-box">
+                <code>message.endsWith(".")</code>
+            </div>
+
+            <div class="output-box" id="ends-with-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>11. Find a Text Position</h2>
+
+            <p>
+                The <code>indexOf()</code> method returns the index where
+                selected text begins.
+            </p>
+
+            <div class="code-box">
+                <code>message.indexOf("JavaScript")</code>
+            </div>
+
+            <div class="output-box" id="index-of-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>String Method Demonstration</h2>
+
+            <div class="method-container">
+
+                <div class="method-card">
+                    <h3>Uppercase</h3>
+
+                    <code>toUpperCase()</code>
+
+                    <p id="uppercase-card-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Lowercase</h3>
+
+                    <code>toLowerCase()</code>
+
+                    <p id="lowercase-card-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Trim</h3>
+
+                    <code>trim()</code>
+
+                    <p id="trim-card-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Replace</h3>
+
+                    <code>replace()</code>
+
+                    <p id="replace-card-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Includes</h3>
+
+                    <code>includes()</code>
+
+                    <p id="includes-card-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Index Position</h3>
+
+                    <code>indexOf()</code>
+
+                    <p id="index-card-output">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>String Methods Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Example</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><code>toUpperCase()</code></td>
+                            <td><code>text.toUpperCase()</code></td>
+                            <td>Converts text to uppercase</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>toLowerCase()</code></td>
+                            <td><code>text.toLowerCase()</code></td>
+                            <td>Converts text to lowercase</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>trim()</code></td>
+                            <td><code>text.trim()</code></td>
+                            <td>Removes outer spaces</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>replace()</code></td>
+                            <td><code>text.replace("old", "new")</code></td>
+                            <td>Replaces matching text</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>charAt()</code></td>
+                            <td><code>text.charAt(0)</code></td>
+                            <td>Reads a character</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>slice()</code></td>
+                            <td><code>text.slice(0, 4)</code></td>
+                            <td>Extracts part of a string</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>substring()</code></td>
+                            <td><code>text.substring(0, 4)</code></td>
+                            <td>Extracts part of a string</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>includes()</code></td>
+                            <td><code>text.includes("JS")</code></td>
+                            <td>Checks whether text exists</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>startsWith()</code></td>
+                            <td><code>text.startsWith("Hello")</code></td>
+                            <td>Checks the beginning</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>endsWith()</code></td>
+                            <td><code>text.endsWith(".")</code></td>
+                            <td>Checks the ending</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>indexOf()</code></td>
+                            <td><code>text.indexOf("JS")</code></td>
+                            <td>Finds a text position</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
