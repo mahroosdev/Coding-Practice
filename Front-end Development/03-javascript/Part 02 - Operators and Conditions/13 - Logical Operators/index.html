@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Logical Operators</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript Logical Operators</h1>
+
+            <p>
+                Learning how JavaScript combines and reverses
+                boolean values.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a Logical Operator?</h2>
+
+            <p>
+                Logical operators work with boolean values and conditions.
+            </p>
+
+            <p>
+                Their result is usually <code>true</code> or
+                <code>false</code>.
+            </p>
+
+            <div class="code-box">
+                <code>true &amp;&amp; false</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Logical AND</h2>
+
+            <p>
+                The AND operator returns <code>true</code> only when
+                both conditions are true.
+            </p>
+
+            <div class="code-box">
+                <code>isLoggedIn &amp;&amp; hasPermission</code>
+            </div>
+
+            <div class="output-box" id="and-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>AND Operator Results</h2>
+
+            <div class="result-grid">
+
+                <div class="result-card">
+                    <h3>true &amp;&amp; true</h3>
+
+                    <p id="and-card-one">
+                        Waiting...
+                    </p>
+                </div>
+
+                <div class="result-card">
+                    <h3>true &amp;&amp; false</h3>
+
+                    <p id="and-card-two">
+                        Waiting...
+                    </p>
+                </div>
+
+                <div class="result-card">
+                    <h3>false &amp;&amp; true</h3>
+
+                    <p id="and-card-three">
+                        Waiting...
+                    </p>
+                </div>
+
+                <div class="result-card">
+                    <h3>false &amp;&amp; false</h3>
+
+                    <p id="and-card-four">
+                        Waiting...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Logical OR</h2>
+
+            <p>
+                The OR operator returns <code>true</code> when at least
+                one condition is true.
+            </p>
+
+            <div class="code-box">
+                <code>isAdmin || isCreator</code>
+            </div>
+
+            <div class="output-box" id="or-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>OR Operator Results</h2>
+
+            <div class="result-grid">
+
+                <div class="result-card">
+                    <h3>true || true</h3>
+
+                    <p id="or-card-one">
+                        Waiting...
+                    </p>
+                </div>
+
+                <div class="result-card">
+                    <h3>true || false</h3>
+
+                    <p id="or-card-two">
+                        Waiting...
+                    </p>
+                </div>
+
+                <div class="result-card">
+                    <h3>false || true</h3>
+
+                    <p id="or-card-three">
+                        Waiting...
+                    </p>
+                </div>
+
+                <div class="result-card">
+                    <h3>false || false</h3>
+
+                    <p id="or-card-four">
+                        Waiting...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Logical NOT</h2>
+
+            <p>
+                The NOT operator reverses a boolean value.
+            </p>
+
+            <div class="code-box">
+                <code>!isOffline</code>
+            </div>
+
+            <div class="output-box" id="not-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Combining Comparisons</h2>
+
+            <p>
+                Logical operators can combine comparison results.
+            </p>
+
+            <div class="code-box">
+                <code>userAge &gt;= 18 &amp;&amp; userAge &lt;= 60</code>
+            </div>
+
+            <div class="output-box" id="comparison-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Login Example</h2>
+
+            <p>
+                A login check may require both an email and password.
+            </p>
+
+            <div class="code-box">
+                <code>hasEmail &amp;&amp; hasPassword</code>
+            </div>
+
+            <div class="output-box" id="login-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Access Example</h2>
+
+            <p>
+                Access may be allowed when a user is an administrator
+                or a creator.
+            </p>
+
+            <div class="code-box">
+                <code>isAdmin || isCreator</code>
+            </div>
+
+            <div class="output-box" id="access-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Logical Operator Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><code>&amp;&amp;</code></td>
+                            <td>AND</td>
+                            <td>Both conditions must be true</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>||</code></td>
+                            <td>OR</td>
+                            <td>At least one condition must be true</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>!</code></td>
+                            <td>NOT</td>
+                            <td>Reverses a boolean value</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
