@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Expressions and Statements</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript Expressions and Statements</h1>
+
+            <p>
+                Learning how JavaScript creates values and performs
+                complete instructions.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is an Expression?</h2>
+
+            <p>
+                An expression is code that produces a value.
+            </p>
+
+            <div class="example-box">
+                <code>10 + 5</code>
+            </div>
+
+            <p>
+                This expression produces the value <code>15</code>.
+            </p>
+
+            <div class="output-box" id="expression-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>What Is a Statement?</h2>
+
+            <p>
+                A statement is a complete instruction that tells JavaScript
+                to perform an action.
+            </p>
+
+            <div class="example-box">
+                <code>const total = 10 + 5;</code>
+            </div>
+
+            <p>
+                This statement creates a variable and stores the result of
+                an expression.
+            </p>
+
+            <div class="output-box" id="statement-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Expression Examples</h2>
+
+            <div class="card-container">
+
+                <div class="lesson-card">
+                    <h3>Arithmetic Expression</h3>
+                    <code>20 + 10</code>
+                    <p id="arithmetic-expression">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="lesson-card">
+                    <h3>String Expression</h3>
+                    <code>"Java" + "Script"</code>
+                    <p id="string-expression">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="lesson-card">
+                    <h3>Comparison Expression</h3>
+                    <code>20 &gt; 18</code>
+                    <p id="comparison-expression">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+                <div class="lesson-card">
+                    <h3>Logical Expression</h3>
+                    <code>true &amp;&amp; false</code>
+                    <p id="logical-expression">
+                        Waiting for JavaScript...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Statement Examples</h2>
+
+            <div class="statement-container">
+
+                <div class="statement-card">
+                    <h3>Variable Declaration</h3>
+
+                    <code>const courseName = "JavaScript";</code>
+
+                    <p>
+                        Creates a variable and assigns a value.
+                    </p>
+                </div>
+
+                <div class="statement-card">
+                    <h3>Assignment Statement</h3>
+
+                    <code>lessonNumber = 9;</code>
+
+                    <p>
+                        Assigns a new value to an existing variable.
+                    </p>
+                </div>
+
+                <div class="statement-card">
+                    <h3>Console Statement</h3>
+
+                    <code>console.log(courseName);</code>
+
+                    <p>
+                        Displays a value in the browser console.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="output-box" id="statement-example-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Expressions Inside Statements</h2>
+
+            <p>
+                Expressions are often placed inside statements.
+            </p>
+
+            <div class="example-box">
+                <code>const finalScore = 50 + 25;</code>
+            </div>
+
+            <div class="explanation-grid">
+
+                <div class="explanation-card">
+                    <h3>Expression</h3>
+                    <code>50 + 25</code>
+                    <p>Produces the value 75.</p>
+                </div>
+
+                <div class="explanation-card">
+                    <h3>Statement</h3>
+                    <code>const finalScore = 50 + 25;</code>
+                    <p>Stores the value inside a variable.</p>
+                </div>
+
+            </div>
+
+            <div class="output-box" id="inside-statement-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>JavaScript Execution Order</h2>
+
+            <p>
+                JavaScript normally reads and runs statements from top to
+                bottom.
+            </p>
+
+            <div class="code-list">
+                <code>const firstNumber = 10;</code>
+                <code>const secondNumber = 5;</code>
+                <code>const answer = firstNumber + secondNumber;</code>
+                <code>console.log(answer);</code>
+            </div>
+
+            <div class="output-box" id="order-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Semicolons</h2>
+
+            <p>
+                A semicolon can mark the end of a JavaScript statement.
+            </p>
+
+            <div class="comparison-container">
+
+                <div class="comparison-card recommended">
+                    <h3>Recommended</h3>
+
+                    <code>const language = "JavaScript";</code>
+
+                    <p>
+                        The statement ends clearly with a semicolon.
+                    </p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>Possible</h3>
+
+                    <code>const language = "JavaScript"</code>
+
+                    <p>
+                        JavaScript may add the semicolon automatically.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Multiple Statements</h2>
+
+            <p>
+                A JavaScript program usually contains many statements.
+            </p>
+
+            <div class="output-box" id="multiple-statements-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Expressions and Statements Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Example</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Expression</td>
+                            <td><code>10 + 5</code></td>
+                            <td>Produces a value</td>
+                        </tr>
+
+                        <tr>
+                            <td>Declaration Statement</td>
+                            <td><code>const total = 15;</code></td>
+                            <td>Creates a variable</td>
+                        </tr>
+
+                        <tr>
+                            <td>Assignment Statement</td>
+                            <td><code>score = 20;</code></td>
+                            <td>Changes a variable value</td>
+                        </tr>
+
+                        <tr>
+                            <td>Method Call Statement</td>
+                            <td><code>console.log(total);</code></td>
+                            <td>Performs an action</td>
+                        </tr>
+
+                        <tr>
+                            <td>Semicolon</td>
+                            <td><code>;</code></td>
+                            <td>Marks the end of a statement</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
