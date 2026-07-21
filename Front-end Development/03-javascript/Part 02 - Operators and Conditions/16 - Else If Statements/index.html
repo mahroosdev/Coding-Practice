@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Else If Statements</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript Else If Statements</h1>
+
+            <p>
+                Learning how JavaScript checks several conditions in order.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is an Else If Statement?</h2>
+
+            <p>
+                An <code>else if</code> statement checks another condition
+                when the previous condition is false.
+            </p>
+
+            <div class="code-box">
+                <code>if (conditionOne) {
+    // First result
+} else if (conditionTwo) {
+    // Second result
+} else {
+    // Final result
+}</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Score Grade</h2>
+
+            <p>
+                Several score ranges can be checked from highest to lowest.
+            </p>
+
+            <div class="output-box" id="grade-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Temperature Check</h2>
+
+            <p>
+                This example describes the temperature using different ranges.
+            </p>
+
+            <div class="output-box" id="temperature-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Age Group</h2>
+
+            <p>
+                A person's age can be placed into one matching group.
+            </p>
+
+            <div class="output-box" id="age-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Traffic Light</h2>
+
+            <p>
+                String values can also be checked with else-if conditions.
+            </p>
+
+            <div class="output-box" id="traffic-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Login Role</h2>
+
+            <p>
+                This example displays a message for different user roles.
+            </p>
+
+            <div class="output-box" id="role-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Condition Order</h2>
+
+            <div class="note-box">
+                JavaScript stops after the first true condition. Write more
+                specific or higher conditions before broader conditions.
+            </div>
+
+            <div class="order-grid">
+
+                <div class="order-card">
+                    <h3>First</h3>
+                    <code>score &gt;= 90</code>
+                </div>
+
+                <div class="order-card">
+                    <h3>Second</h3>
+                    <code>score &gt;= 75</code>
+                </div>
+
+                <div class="order-card">
+                    <h3>Third</h3>
+                    <code>score &gt;= 50</code>
+                </div>
+
+                <div class="order-card">
+                    <h3>Final</h3>
+                    <code>else</code>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Else If Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Part</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><code>if</code></td>
+                            <td>Checks the first condition</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>else if</code></td>
+                            <td>Checks another condition</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>else</code></td>
+                            <td>Runs when no condition matches</td>
+                        </tr>
+
+                        <tr>
+                            <td>Condition order</td>
+                            <td>Checks from top to bottom</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
