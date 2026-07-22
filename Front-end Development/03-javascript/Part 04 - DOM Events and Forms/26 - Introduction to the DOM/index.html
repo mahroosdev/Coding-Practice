@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to the DOM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Introduction to the DOM</h1>
+
+            <p>
+                Learning how JavaScript represents and interacts with
+                an HTML document.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is the DOM?</h2>
+
+            <p>
+                DOM means <strong>Document Object Model</strong>.
+            </p>
+
+            <p>
+                The browser converts HTML into a tree of JavaScript objects
+                that can be read and changed.
+            </p>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>The Document Object</h2>
+
+            <p>
+                JavaScript uses the <code>document</code> object to access
+                the current webpage.
+            </p>
+
+            <div class="code-box">
+                <code>console.log(document);</code>
+            </div>
+
+            <div class="output-box" id="document-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>HTML Becomes a Tree</h2>
+
+            <div class="dom-tree">
+
+                <div class="tree-level root-level">
+                    <div class="tree-node">
+                        document
+                    </div>
+                </div>
+
+                <div class="tree-line"></div>
+
+                <div class="tree-level">
+                    <div class="tree-node">
+                        html
+                    </div>
+                </div>
+
+                <div class="tree-line"></div>
+
+                <div class="tree-level two-columns">
+                    <div class="tree-node">
+                        head
+                    </div>
+
+                    <div class="tree-node">
+                        body
+                    </div>
+                </div>
+
+                <div class="tree-line"></div>
+
+                <div class="tree-level three-columns">
+                    <div class="tree-node">
+                        header
+                    </div>
+
+                    <div class="tree-node">
+                        main
+                    </div>
+
+                    <div class="tree-node">
+                        footer
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>DOM Relationships</h2>
+
+            <div class="relationship-grid">
+
+                <div class="relationship-card">
+                    <h3>Parent</h3>
+
+                    <p>
+                        An element containing another element.
+                    </p>
+                </div>
+
+                <div class="relationship-card">
+                    <h3>Child</h3>
+
+                    <p>
+                        An element contained inside another element.
+                    </p>
+                </div>
+
+                <div class="relationship-card">
+                    <h3>Sibling</h3>
+
+                    <p>
+                        Elements sharing the same parent.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Document Information</h2>
+
+            <p>
+                JavaScript can read information from the current document.
+            </p>
+
+            <div class="output-box" id="information-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Head and Body Elements</h2>
+
+            <p>
+                The document object provides access to the page's
+                <code>head</code> and <code>body</code>.
+            </p>
+
+            <div class="output-box" id="page-parts-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>DOM Elements Are Objects</h2>
+
+            <p>
+                HTML elements become objects with properties and methods.
+            </p>
+
+            <div class="output-box" id="element-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Why the DOM Is Useful</h2>
+
+            <div class="use-grid">
+
+                <div class="use-card">
+                    <h3>Read Content</h3>
+                    <p>JavaScript can read webpage information.</p>
+                </div>
+
+                <div class="use-card">
+                    <h3>Change Content</h3>
+                    <p>JavaScript can update text and HTML.</p>
+                </div>
+
+                <div class="use-card">
+                    <h3>Change Styles</h3>
+                    <p>JavaScript can update element styling.</p>
+                </div>
+
+                <div class="use-card">
+                    <h3>Handle Events</h3>
+                    <p>JavaScript can respond to user actions.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>DOM Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>DOM</td>
+                            <td>Document Object Model</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>document</code></td>
+                            <td>Represents the webpage</td>
+                        </tr>
+
+                        <tr>
+                            <td>Element</td>
+                            <td>An HTML object in the DOM</td>
+                        </tr>
+
+                        <tr>
+                            <td>Parent</td>
+                            <td>Contains another element</td>
+                        </tr>
+
+                        <tr>
+                            <td>Child</td>
+                            <td>Exists inside another element</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
