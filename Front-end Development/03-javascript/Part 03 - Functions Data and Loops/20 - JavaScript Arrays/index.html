@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Arrays</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript Arrays</h1>
+
+            <p>
+                Learning how JavaScript stores several values inside
+                one variable.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is an Array?</h2>
+
+            <p>
+                An array stores several related values inside one variable.
+            </p>
+
+            <div class="code-box">
+                <code>const languages = ["HTML", "CSS", "JavaScript"];</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Creating an Array</h2>
+
+            <p>
+                Array values are written inside square brackets and separated
+                by commas.
+            </p>
+
+            <div class="output-box" id="creation-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Array Indexes</h2>
+
+            <p>
+                Array index counting begins at zero.
+            </p>
+
+            <div class="array-grid">
+
+                <div class="array-card">
+                    <strong>HTML</strong>
+                    <span>Index 0</span>
+                </div>
+
+                <div class="array-card">
+                    <strong>CSS</strong>
+                    <span>Index 1</span>
+                </div>
+
+                <div class="array-card">
+                    <strong>JavaScript</strong>
+                    <span>Index 2</span>
+                </div>
+
+            </div>
+
+            <div class="output-box" id="index-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Reading Array Values</h2>
+
+            <p>
+                Use an index inside square brackets to read one value.
+            </p>
+
+            <div class="code-box">
+                <code>languages[0]</code>
+            </div>
+
+            <div class="output-box" id="reading-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Changing an Array Value</h2>
+
+            <p>
+                An array item can be changed using its index.
+            </p>
+
+            <div class="code-box">
+                <code>languages[1] = "Tailwind CSS";</code>
+            </div>
+
+            <div class="output-box" id="change-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Array Length</h2>
+
+            <p>
+                The <code>length</code> property returns the number of
+                items inside an array.
+            </p>
+
+            <div class="output-box" id="length-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. First and Last Items</h2>
+
+            <p>
+                The first item uses index zero. The final item can be accessed
+                using <code>length - 1</code>.
+            </p>
+
+            <div class="output-box" id="first-last-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Different Array Examples</h2>
+
+            <div class="example-grid">
+
+                <div class="example-card">
+                    <h3>Strings</h3>
+                    <p id="string-array-output">Waiting...</p>
+                </div>
+
+                <div class="example-card">
+                    <h3>Numbers</h3>
+                    <p id="number-array-output">Waiting...</p>
+                </div>
+
+                <div class="example-card">
+                    <h3>Booleans</h3>
+                    <p id="boolean-array-output">Waiting...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Array Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Create an array</td>
+                            <td><code>["HTML", "CSS"]</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>First item</td>
+                            <td><code>array[0]</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Change an item</td>
+                            <td><code>array[1] = "JavaScript"</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Number of items</td>
+                            <td><code>array.length</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Last item</td>
+                            <td><code>array[array.length - 1]</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
