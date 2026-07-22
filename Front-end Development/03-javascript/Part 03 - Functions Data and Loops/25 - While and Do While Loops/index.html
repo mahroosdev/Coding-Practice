@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>While and Do While Loops</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>While and Do While Loops</h1>
+
+            <p>
+                Learning how JavaScript repeats code using while and
+                do while loops.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a While Loop?</h2>
+
+            <p>
+                A while loop repeats code while its condition is true.
+            </p>
+
+            <div class="code-box">
+                <code>let number = 1;
+
+while (number &lt;= 5) {
+    console.log(number);
+    number++;
+}</code>
+            </div>
+
+            <div class="output-box" id="while-introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Counting with While</h2>
+
+            <p>
+                The counter must be created before the loop and updated
+                inside the loop.
+            </p>
+
+            <div class="output-box" id="while-count-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Countdown with While</h2>
+
+            <p>
+                A while loop can decrease a number until the condition
+                becomes false.
+            </p>
+
+            <div class="output-box" id="countdown-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Looping Through an Array</h2>
+
+            <p>
+                A while loop can read array items using an index counter.
+            </p>
+
+            <div class="output-box" id="array-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>What Is a Do While Loop?</h2>
+
+            <p>
+                A do while loop runs its code before checking the condition.
+            </p>
+
+            <div class="code-box">
+                <code>do {
+    // Code runs first
+} while (condition);</code>
+            </div>
+
+            <div class="output-box" id="do-while-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Do While Runs at Least Once</h2>
+
+            <p>
+                The code runs once even when the condition begins as false.
+            </p>
+
+            <div class="output-box" id="once-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>While Compared with Do While</h2>
+
+            <div class="comparison-grid">
+
+                <div class="comparison-card">
+                    <h3>while</h3>
+
+                    <p>
+                        Checks the condition before running the code.
+                    </p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>do while</h3>
+
+                    <p>
+                        Runs the code before checking the condition.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Avoid Infinite Loops</h2>
+
+            <div class="warning-box">
+                Always update the counter or value used by the condition.
+                Otherwise, the condition may remain true forever.
+            </div>
+        </section>
+
+        <section>
+            <h2>Loop Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Loop</th>
+                            <th>Condition Check</th>
+                            <th>Minimum Runs</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><code>while</code></td>
+                            <td>Before the code block</td>
+                            <td>Zero</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>do while</code></td>
+                            <td>After the code block</td>
+                            <td>One</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
