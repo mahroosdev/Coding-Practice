@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Objects</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript Objects</h1>
+
+            <p>
+                Learning how JavaScript stores related information
+                using properties and values.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is an Object?</h2>
+
+            <p>
+                An object stores related values using property names.
+            </p>
+
+            <div class="code-box">
+                <code>const student = {
+    name: "Mahroos",
+    role: "Software Engineer",
+    isLearning: true
+};</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Object Properties</h2>
+
+            <p>
+                Each property contains a name and a value.
+            </p>
+
+            <div class="property-grid">
+
+                <div class="property-card">
+                    <h3>name</h3>
+                    <p id="name-property-output">Waiting...</p>
+                </div>
+
+                <div class="property-card">
+                    <h3>role</h3>
+                    <p id="role-property-output">Waiting...</p>
+                </div>
+
+                <div class="property-card">
+                    <h3>isLearning</h3>
+                    <p id="learning-property-output">Waiting...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Dot Notation</h2>
+
+            <p>
+                Dot notation accesses a property using its name.
+            </p>
+
+            <div class="code-box">
+                <code>student.name</code>
+            </div>
+
+            <div class="output-box" id="dot-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Bracket Notation</h2>
+
+            <p>
+                Bracket notation accesses a property using a string.
+            </p>
+
+            <div class="code-box">
+                <code>student["role"]</code>
+            </div>
+
+            <div class="output-box" id="bracket-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Changing a Property</h2>
+
+            <p>
+                An existing property value can be updated.
+            </p>
+
+            <div class="output-box" id="change-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Adding a Property</h2>
+
+            <p>
+                New properties can be added after creating the object.
+            </p>
+
+            <div class="output-box" id="add-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Deleting a Property</h2>
+
+            <p>
+                The <code>delete</code> keyword removes an object property.
+            </p>
+
+            <div class="output-box" id="delete-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Object Method</h2>
+
+            <p>
+                A function stored inside an object is called a method.
+            </p>
+
+            <div class="output-box" id="method-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Object Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Create object</td>
+                            <td><code>{ name: "Mahroos" }</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dot notation</td>
+                            <td><code>student.name</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Bracket notation</td>
+                            <td><code>student["name"]</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Add property</td>
+                            <td><code>student.country = "Sri Lanka"</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>Delete property</td>
+                            <td><code>delete student.country</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
