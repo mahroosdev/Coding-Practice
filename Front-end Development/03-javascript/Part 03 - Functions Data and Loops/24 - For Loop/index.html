@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript For Loop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>JavaScript For Loop</h1>
+
+            <p>
+                Learning how to repeat JavaScript code a known number
+                of times.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a For Loop?</h2>
+
+            <p>
+                A <code>for</code> loop repeats a block of code while
+                its condition remains true.
+            </p>
+
+            <div class="code-box">
+                <code>for (let number = 1; number &lt;= 5; number++) {
+    console.log(number);
+}</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Parts of a For Loop</h2>
+
+            <div class="card-grid">
+
+                <div class="lesson-card">
+                    <h3>Starting Value</h3>
+                    <code>let number = 1</code>
+                    <p>Creates the loop counter.</p>
+                </div>
+
+                <div class="lesson-card">
+                    <h3>Condition</h3>
+                    <code>number &lt;= 5</code>
+                    <p>Controls how long the loop runs.</p>
+                </div>
+
+                <div class="lesson-card">
+                    <h3>Update</h3>
+                    <code>number++</code>
+                    <p>Changes the counter after every repetition.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Counting Upward</h2>
+
+            <p>
+                This loop displays numbers from one to five.
+            </p>
+
+            <div class="output-box" id="count-up-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Counting Downward</h2>
+
+            <p>
+                A loop can decrease its counter using the decrement operator.
+            </p>
+
+            <div class="output-box" id="count-down-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Increasing by Two</h2>
+
+            <p>
+                The update section can increase the counter by more than one.
+            </p>
+
+            <div class="code-box">
+                <code>number += 2</code>
+            </div>
+
+            <div class="output-box" id="step-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Looping Through an Array</h2>
+
+            <p>
+                A for loop can access every item inside an array.
+            </p>
+
+            <div class="output-box" id="array-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Adding Numbers with a Loop</h2>
+
+            <p>
+                A loop can calculate a total by adding values repeatedly.
+            </p>
+
+            <div class="output-box" id="total-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>For Loop Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Part</th>
+                            <th>Example</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Initialization</td>
+                            <td><code>let i = 0</code></td>
+                            <td>Creates the counter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Condition</td>
+                            <td><code>i &lt; 5</code></td>
+                            <td>Controls repetition</td>
+                        </tr>
+
+                        <tr>
+                            <td>Update</td>
+                            <td><code>i++</code></td>
+                            <td>Changes the counter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Code block</td>
+                            <td><code>{ ... }</code></td>
+                            <td>Contains repeated code</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
