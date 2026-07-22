@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to JavaScript Loops</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Introduction to JavaScript Loops</h1>
+
+            <p>
+                Learning how loops repeat code without writing the same
+                statements many times.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a Loop?</h2>
+
+            <p>
+                A loop repeats a block of code while a condition allows it.
+            </p>
+
+            <div class="code-box">
+                <code>for (let number = 1; number &lt;= 5; number++) {
+    console.log(number);
+}</code>
+            </div>
+
+            <div class="output-box" id="introduction-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Repeated Code Without a Loop</h2>
+
+            <p>
+                Writing the same statement repeatedly creates unnecessary
+                duplicate code.
+            </p>
+
+            <div class="output-box" id="repeated-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Repeating Code with a Loop</h2>
+
+            <p>
+                A loop can produce the same result using less code.
+            </p>
+
+            <div class="output-box" id="loop-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Main Parts of a Loop</h2>
+
+            <div class="part-grid">
+
+                <div class="part-card">
+                    <h3>Starting Value</h3>
+                    <code>let number = 1</code>
+                    <p>Creates the loop counter.</p>
+                </div>
+
+                <div class="part-card">
+                    <h3>Condition</h3>
+                    <code>number &lt;= 5</code>
+                    <p>Controls whether the loop continues.</p>
+                </div>
+
+                <div class="part-card">
+                    <h3>Update</h3>
+                    <code>number++</code>
+                    <p>Changes the counter after each repetition.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Main Loop Types</h2>
+
+            <div class="loop-grid">
+
+                <div class="loop-card">
+                    <h3>for Loop</h3>
+                    <p>
+                        Useful when the number of repetitions is known.
+                    </p>
+                </div>
+
+                <div class="loop-card">
+                    <h3>while Loop</h3>
+                    <p>
+                        Repeats while a condition remains true.
+                    </p>
+                </div>
+
+                <div class="loop-card">
+                    <h3>do while Loop</h3>
+                    <p>
+                        Runs once before checking the condition.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Looping Through an Array</h2>
+
+            <p>
+                Loops can read each value stored inside an array.
+            </p>
+
+            <div class="output-box" id="array-loop-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Avoiding Infinite Loops</h2>
+
+            <p>
+                A loop must eventually reach a false condition.
+            </p>
+
+            <div class="warning-box">
+                Always update the loop counter or condition. Without an
+                update, the loop may continue forever.
+            </div>
+        </section>
+
+        <section>
+            <h2>Loop Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Loop</td>
+                            <td>Repeats a code block</td>
+                        </tr>
+
+                        <tr>
+                            <td>Counter</td>
+                            <td>Tracks the current repetition</td>
+                        </tr>
+
+                        <tr>
+                            <td>Condition</td>
+                            <td>Controls when the loop stops</td>
+                        </tr>
+
+                        <tr>
+                            <td>Update</td>
+                            <td>Changes the counter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Infinite loop</td>
+                            <td>A loop that never reaches its stopping point</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
