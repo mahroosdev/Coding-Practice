@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Function Parameters and Return Values</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Function Parameters and Return Values</h1>
+
+            <p>
+                Learning how functions receive values and return results.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>What Is a Parameter?</h2>
+
+            <p>
+                A parameter is a variable written inside a function's
+                parentheses.
+            </p>
+
+            <div class="code-box">
+                <code>function greetUser(name) {
+    console.log("Hello " + name);
+}</code>
+            </div>
+
+            <div class="output-box" id="parameter-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>1. Arguments</h2>
+
+            <p>
+                An argument is the value passed to a function when it
+                is called.
+            </p>
+
+            <div class="code-box">
+                <code>greetUser("Mahroos");</code>
+            </div>
+
+            <div class="output-box" id="argument-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Multiple Parameters</h2>
+
+            <p>
+                A function can receive more than one value.
+            </p>
+
+            <div class="code-box">
+                <code>function addNumbers(firstNumber, secondNumber)</code>
+            </div>
+
+            <div class="output-box" id="multiple-parameter-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Return Values</h2>
+
+            <p>
+                The <code>return</code> keyword sends a result back from
+                a function.
+            </p>
+
+            <div class="code-box">
+                <code>return firstNumber + secondNumber;</code>
+            </div>
+
+            <div class="output-box" id="return-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Storing a Returned Value</h2>
+
+            <p>
+                A returned result can be stored inside a variable.
+            </p>
+
+            <div class="code-box">
+                <code>const total = addNumbers(10, 5);</code>
+            </div>
+
+            <div class="output-box" id="stored-return-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Full Name Function</h2>
+
+            <p>
+                String values can also be passed and returned.
+            </p>
+
+            <div class="output-box" id="name-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Boolean Return Value</h2>
+
+            <p>
+                A function can return a boolean result.
+            </p>
+
+            <div class="output-box" id="boolean-output">
+                JavaScript output will appear here.
+            </div>
+        </section>
+
+        <section>
+            <h2>Parameter and Return Examples</h2>
+
+            <div class="example-grid">
+
+                <div class="example-card">
+                    <h3>Greeting</h3>
+                    <p id="greeting-card-output">Waiting...</p>
+                </div>
+
+                <div class="example-card">
+                    <h3>Addition</h3>
+                    <p id="addition-card-output">Waiting...</p>
+                </div>
+
+                <div class="example-card">
+                    <h3>Area</h3>
+                    <p id="area-card-output">Waiting...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Function Value Summary</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Parameter</td>
+                            <td>Receives a value inside a function</td>
+                        </tr>
+
+                        <tr>
+                            <td>Argument</td>
+                            <td>Value passed during the function call</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>return</code></td>
+                            <td>Sends a result from the function</td>
+                        </tr>
+
+                        <tr>
+                            <td>Returned value</td>
+                            <td>Can be stored or used elsewhere</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Learning Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
