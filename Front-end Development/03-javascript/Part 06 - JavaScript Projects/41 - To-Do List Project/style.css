@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin: 30px 0;
+    padding: 30px;
+}
+
+section h2,
+.feature-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.control-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    border: 2px solid darkblue;
+    padding: 12px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid lightblue;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: 2px solid darkblue;
+    padding: 11px 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+button:disabled {
+    background-color: #9ca3af;
+    color: white;
+    border-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.danger-button {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.danger-button:hover {
+    background-color: white;
+    color: darkred;
+}
+
+.error-message {
+    min-height: 25px;
+    color: darkred;
+    font-weight: bold;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.section-heading p {
+    margin-bottom: 0;
+}
+
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.statistic-card {
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.statistic-number {
+    display: block;
+    color: darkblue;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.statistic-card p {
+    margin: 5px 0 0;
+}
+
+.task-list {
+    padding: 0;
+    list-style: none;
+}
+
+.task-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 15px;
+    background-color: #e6ecf5;
+    border-left: 6px solid darkblue;
+    margin-bottom: 15px;
+    padding: 18px;
+}
+
+.task-item.priority-high {
+    border-left-color: darkred;
+}
+
+.task-item.priority-medium {
+    border-left-color: darkorange;
+}
+
+.task-item.priority-low {
+    border-left-color: darkgreen;
+}
+
+.task-checkbox {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.task-content {
+    min-width: 0;
+}
+
+.task-name {
+    display: block;
+    color: #1f2937;
+    font-size: 17px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.task-item.completed .task-name {
+    color: #6b7280;
+    text-decoration: line-through;
+}
+
+.task-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.task-label {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 13px;
+}
+
+.priority-label-high {
+    background-color: darkred;
+}
+
+.priority-label-medium {
+    background-color: darkorange;
+}
+
+.priority-label-low {
+    background-color: darkgreen;
+}
+
+.date-label {
+    background-color: #4b5563;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+.edit-button:hover {
+    color: darkgreen;
+}
+
+.delete-button {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+.empty-message {
+    background-color: lightyellow;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+}
+
+.feature-card p {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .control-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .task-item {
+        grid-template-columns: auto 1fr;
+    }
+
+    .task-actions {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-grid,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section-heading button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .task-item {
+        grid-template-columns: 1fr;
+    }
+
+    .task-checkbox {
+        justify-self: start;
+    }
+
+    .task-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

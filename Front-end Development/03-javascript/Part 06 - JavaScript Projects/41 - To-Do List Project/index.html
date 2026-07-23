@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>To-Do List Project</h1>
+
+            <p>
+                A complete task-management application using JavaScript,
+                DOM manipulation, filtering, and local storage.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>Add a New Task</h2>
+
+            <form id="task-form">
+
+                <div class="form-grid">
+
+                    <div class="form-group task-name-group">
+                        <label for="task-input">
+                            Task Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="task-input"
+                            placeholder="Enter a task"
+                            maxlength="100"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="priority-select">
+                            Priority
+                        </label>
+
+                        <select id="priority-select">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <p class="error-message" id="task-error"></p>
+
+                <button type="submit">
+                    Add Task
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <div>
+                    <h2>Task Controls</h2>
+
+                    <p>
+                        Search and filter the tasks displayed below.
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    id="clear-completed-button"
+                    class="danger-button"
+                >
+                    Clear Completed
+                </button>
+            </div>
+
+            <div class="control-grid">
+
+                <div class="form-group">
+                    <label for="search-input">
+                        Search Tasks
+                    </label>
+
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Search by task name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="status-filter">
+                        Filter by Status
+                    </label>
+
+                    <select id="status-filter">
+                        <option value="all">All Tasks</option>
+                        <option value="active">Active Tasks</option>
+                        <option value="completed">Completed Tasks</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority-filter">
+                        Filter by Priority
+                    </label>
+
+                    <select id="priority-filter">
+                        <option value="all">All Priorities</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="low">Low Priority</option>
+                    </select>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Task Statistics</h2>
+
+            <div class="statistics-grid">
+
+                <article class="statistic-card">
+                    <span class="statistic-number" id="total-count">0</span>
+                    <p>Total Tasks</p>
+                </article>
+
+                <article class="statistic-card">
+                    <span class="statistic-number" id="active-count">0</span>
+                    <p>Active Tasks</p>
+                </article>
+
+                <article class="statistic-card">
+                    <span class="statistic-number" id="completed-count">0</span>
+                    <p>Completed Tasks</p>
+                </article>
+
+                <article class="statistic-card">
+                    <span class="statistic-number" id="visible-count">0</span>
+                    <p>Visible Results</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <div>
+                    <h2>My Tasks</h2>
+
+                    <p id="task-summary">
+                        No tasks have been added.
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    id="clear-all-button"
+                    class="danger-button"
+                >
+                    Clear All Tasks
+                </button>
+            </div>
+
+            <ul class="task-list" id="task-list"></ul>
+
+            <div class="empty-message" id="empty-message">
+                No tasks match the current search or filters.
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Features</h2>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <h3>Task Management</h3>
+
+                    <p>
+                        Add, complete, edit, and remove individual tasks.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Search and Filters</h3>
+
+                    <p>
+                        Find tasks by name, status, and priority.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Statistics</h3>
+
+                    <p>
+                        Track total, active, completed, and visible tasks.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Local Storage</h3>
+
+                    <p>
+                        Tasks remain available after refreshing the page.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Projects</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
