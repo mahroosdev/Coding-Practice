@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Timers and Digital Clock</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Timers and Digital Clock</h1>
+
+            <p>
+                Practical JavaScript timing features using intervals
+                and timeouts.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="clock-section">
+            <h2>Digital Clock</h2>
+
+            <div class="clock-display" id="clock-display">
+                00:00:00
+            </div>
+
+            <p id="date-display">
+                Loading current date...
+            </p>
+        </section>
+
+        <section>
+            <h2>Stopwatch</h2>
+
+            <div class="stopwatch-display" id="stopwatch-display">
+                00:00:00
+            </div>
+
+            <p class="status-message" id="stopwatch-status">
+                The stopwatch is ready.
+            </p>
+
+            <div class="button-group">
+                <button type="button" id="start-button">
+                    Start
+                </button>
+
+                <button type="button" id="pause-button">
+                    Pause
+                </button>
+
+                <button
+                    type="button"
+                    id="reset-button"
+                    class="secondary-button"
+                >
+                    Reset
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Delayed Message</h2>
+
+            <p>
+                Click the button to display a message after three seconds.
+            </p>
+
+            <button type="button" id="delay-button">
+                Start Delayed Message
+            </button>
+
+            <div class="message-box" id="delay-message">
+                Waiting to start.
+            </div>
+        </section>
+
+        <section>
+            <h2>Timer Concepts</h2>
+
+            <div class="concept-grid">
+
+                <article class="concept-card">
+                    <h3>setInterval()</h3>
+
+                    <p>
+                        Repeats a function after a fixed time.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <h3>clearInterval()</h3>
+
+                    <p>
+                        Stops a repeating interval.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <h3>setTimeout()</h3>
+
+                    <p>
+                        Runs a function once after a delay.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <h3>Date Object</h3>
+
+                    <p>
+                        Provides the current date and time.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Practical Applications</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin: 30px 0;
+    padding: 30px;
+}
+
+section h2,
+.concept-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+.clock-section {
+    text-align: center;
+}
+
+.clock-display,
+.stopwatch-display {
+    background-color: #111827;
+    color: lightgreen;
+    border: 5px solid darkblue;
+    padding: 25px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.stopwatch-display {
+    margin-bottom: 15px;
+}
+
+.status-message {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    background-color: darkblue;
+    color: white;
+    border: 2px solid darkblue;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+button:disabled {
+    background-color: #9ca3af;
+    border-color: #9ca3af;
+    color: white;
+    cursor: not-allowed;
+}
+
+.secondary-button {
+    background-color: white;
+    color: darkblue;
+}
+
+.secondary-button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.message-box {
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    margin-top: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.concept-card {
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+}
+
+.concept-card p {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .clock-display,
+    .stopwatch-display {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .clock-display,
+    .stopwatch-display {
+        padding: 20px 10px;
+        font-size: 29px;
+        letter-spacing: 2px;
+    }
+}
