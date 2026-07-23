@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    border: 2px solid darkblue;
+    margin: 30px 0;
+    padding: 30px;
+}
+
+section h2,
+.concept-card h3 {
+    color: darkblue;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    border: 2px solid darkblue;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: 3px solid lightblue;
+}
+
+.counter-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.counter-row p {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 18px;
+    background-color: #d1d5db;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: darkblue;
+    transition: width 0.2s;
+}
+
+.progress-fill.warning {
+    background-color: darkorange;
+}
+
+.progress-fill.limit {
+    background-color: darkred;
+}
+
+.status-message {
+    min-height: 25px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.warning-message {
+    color: darkorange;
+}
+
+.limit-message {
+    color: darkred;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: 2px solid darkblue;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.concept-card {
+    background-color: #e6ecf5;
+    border-left: 5px solid darkblue;
+    padding: 20px;
+}
+
+.concept-card p {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .counter-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+}

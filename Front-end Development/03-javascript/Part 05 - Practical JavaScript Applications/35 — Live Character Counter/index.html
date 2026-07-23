@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Character Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Live Character Counter</h1>
+
+            <p>
+                A practical JavaScript feature that counts characters
+                while the user types.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>Write a Short Message</h2>
+
+            <label for="message-input">
+                Message
+            </label>
+
+            <textarea
+                id="message-input"
+                maxlength="150"
+                placeholder="Write your message here..."
+            ></textarea>
+
+            <div class="counter-row">
+                <p id="character-counter">
+                    0 / 150 characters
+                </p>
+
+                <p id="remaining-counter">
+                    150 characters remaining
+                </p>
+            </div>
+
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    id="progress-fill"
+                ></div>
+            </div>
+
+            <p class="status-message" id="status-message">
+                Start typing your message.
+            </p>
+
+            <button type="button" id="clear-button">
+                Clear Message
+            </button>
+        </section>
+
+        <section>
+            <h2>How It Works</h2>
+
+            <div class="concept-grid">
+
+                <article class="concept-card">
+                    <h3>Input Event</h3>
+
+                    <p>
+                        Runs whenever the textarea value changes.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <h3>String Length</h3>
+
+                    <p>
+                        Counts the number of typed characters.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <h3>Maximum Length</h3>
+
+                    <p>
+                        Prevents the message from exceeding 150 characters.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <h3>DOM Update</h3>
+
+                    <p>
+                        Updates the counters and progress bar.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Practical Applications</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
