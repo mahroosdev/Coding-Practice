@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Theme Switcher</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div>
+                <h1>Theme Switcher</h1>
+
+                <p>
+                    Switch between light and dark website themes.
+                </p>
+            </div>
+
+            <button
+                type="button"
+                id="theme-button"
+                aria-pressed="false"
+            >
+                Switch to Dark Theme
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="theme-panel">
+            <h2>Current Theme</h2>
+
+            <p class="current-theme" id="current-theme">
+                Light Theme
+            </p>
+
+            <p>
+                Click the theme button to change the appearance of
+                the entire page.
+            </p>
+        </section>
+
+        <section>
+            <h2>Example Content</h2>
+
+            <div class="card-grid">
+
+                <article class="content-card">
+                    <h3>HTML</h3>
+                    <p>Creates the webpage structure.</p>
+                </article>
+
+                <article class="content-card">
+                    <h3>CSS</h3>
+                    <p>Controls the webpage design.</p>
+                </article>
+
+                <article class="content-card">
+                    <h3>JavaScript</h3>
+                    <p>Adds behaviour and interactivity.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>How It Works</h2>
+
+            <p>
+                JavaScript adds or removes the
+                <code>dark-theme</code> class from the body element.
+            </p>
+
+            <div class="code-box">
+                <code>document.body.classList.toggle("dark-theme");</code>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Practical Applications</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

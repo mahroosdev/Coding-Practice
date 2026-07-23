@@ -1,0 +1,165 @@
+:root {
+    --page-background: #e5e7eb;
+    --section-background: white;
+    --primary-color: darkblue;
+    --text-color: #1f2937;
+    --card-background: #e6ecf5;
+    --border-color: darkblue;
+}
+
+body.dark-theme {
+    --page-background: #111827;
+    --section-background: #1f2937;
+    --primary-color: #38bdf8;
+    --text-color: #f3f4f6;
+    --card-background: #374151;
+    --border-color: #38bdf8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--page-background);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+section {
+    background-color: var(--section-background);
+    border: 2px solid var(--border-color);
+    margin: 30px 0;
+    padding: 30px;
+    transition: background-color 0.3s;
+}
+
+section h2,
+.content-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.current-theme {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content-card {
+    background-color: var(--card-background);
+    border-left: 5px solid var(--border-color);
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.content-card p {
+    margin-bottom: 0;
+}
+
+code {
+    background-color: var(--card-background);
+    color: var(--primary-color);
+    padding: 4px 7px;
+}
+
+.code-box {
+    background-color: var(--card-background);
+    border-left: 5px solid var(--border-color);
+    margin-top: 20px;
+    padding: 20px;
+    overflow-wrap: anywhere;
+}
+
+.code-box code {
+    background-color: transparent;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 94%;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
