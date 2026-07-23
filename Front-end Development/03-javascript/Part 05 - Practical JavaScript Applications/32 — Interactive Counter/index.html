@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Interactive Counter</h1>
+
+            <p>
+                A practical JavaScript counter using buttons,
+                conditions, functions, and DOM updates.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="counter-app">
+            <h2>Counter Application</h2>
+
+            <p>
+                Use the buttons to increase, decrease, or reset the counter.
+            </p>
+
+            <div class="counter-display">
+                <span id="counter-value">0</span>
+            </div>
+
+            <p class="counter-status" id="counter-status">
+                The counter is at its minimum value.
+            </p>
+
+            <div class="button-group">
+                <button type="button" id="decrease-button">
+                    Decrease
+                </button>
+
+                <button
+                    type="button"
+                    id="reset-button"
+                    class="reset-button"
+                >
+                    Reset
+                </button>
+
+                <button type="button" id="increase-button">
+                    Increase
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Counter Rules</h2>
+
+            <div class="rule-grid">
+
+                <article class="rule-card">
+                    <h3>Minimum</h3>
+                    <p>The counter cannot go below 0.</p>
+                </article>
+
+                <article class="rule-card">
+                    <h3>Maximum</h3>
+                    <p>The counter cannot go above 10.</p>
+                </article>
+
+                <article class="rule-card">
+                    <h3>Reset</h3>
+                    <p>The reset button returns the counter to 0.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>JavaScript Concepts Used</h2>
+
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>If statements</li>
+                <li>Click events</li>
+                <li>DOM content updates</li>
+                <li>Disabled buttons</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Practical Applications</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
