@@ -30,7 +30,6 @@ public class WhileLoopTask08 {
                 originalNumber + " is not a palindrome number."
             );
         }
-
         input.close();
     }
 }
