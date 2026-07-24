@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task06 {
+public class WhileLoopTask06 {
 
     public static void main(String[] args) {
 

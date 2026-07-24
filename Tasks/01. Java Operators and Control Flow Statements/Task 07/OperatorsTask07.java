@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task03 {
+public class OperatorsTask07 {
 
     public static void main(String[] args) {
 
@@ -13,9 +13,9 @@ public class Task03 {
         int secondNumber = input.nextInt();
 
         if (firstNumber > secondNumber) {
-            System.out.println(firstNumber + " is the largest number.");
+            System.out.println("The bigger number is " + firstNumber + ".");
         } else if (secondNumber > firstNumber) {
-            System.out.println(secondNumber + " is the largest number.");
+            System.out.println("The bigger number is " + secondNumber + ".");
         } else {
             System.out.println("Both numbers are equal.");
         }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task04 {
+public class OperatorsTask04 {
 
     public static void main(String[] args) {
 

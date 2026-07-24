@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task12 {
+public class OperatorsTask02 {
 
     public static void main(String[] args) {
 
@@ -9,10 +9,10 @@ public class Task12 {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
 
-        if (number % 3 == 0 && number % 5 == 0) {
-            System.out.println(number + " is divisible by both 3 and 5.");
+        if (number % 2 == 0) {
+            System.out.println(number + " is an even number.");
         } else {
-            System.out.println(number + " is not divisible by both 3 and 5.");
+            System.out.println(number + " is an odd number.");
         }
 
         input.close();
