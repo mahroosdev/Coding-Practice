@@ -1,25 +1,35 @@
+import java.util.Scanner;
+
 public class ArrayTask06 {
 
     public static void main(String[] args) {
 
-        int[] numbers = {10, 7, 4, 9, 12, 5};
+        Scanner input = new Scanner(System.in);
 
-        int evenCount = 0;
-        int oddCount = 0;
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        System.out.print("Enter a number to search: ");
+        int searchNumber = input.nextInt();
+
+        boolean found = false;
 
         for (int i = 0; i < numbers.length; i++) {
 
-            if (numbers[i] % 2 == 0) {
-
-                evenCount = evenCount + 1;
-
-            } else {
-
-                oddCount = oddCount + 1;
+            if (numbers[i] == searchNumber) {
+                found = true;
+                break;
             }
         }
 
-        System.out.println("Even numbers: " + evenCount);
-        System.out.println("Odd numbers: " + oddCount);
+        if (found == true) {
+
+            System.out.println(searchNumber + " was found in the array.");
+
+        } else {
+
+            System.out.println(searchNumber + " was not found in the array.");
+        }
+
+        input.close();
     }
 }
