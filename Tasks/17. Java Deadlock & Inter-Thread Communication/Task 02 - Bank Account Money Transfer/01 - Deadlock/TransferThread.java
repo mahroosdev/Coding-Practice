@@ -45,13 +45,8 @@ public class TransferThread extends Thread {
                         toAccount.getAccountName()
                 );
 
-                try {
-                    fromAccount.withdraw(amount);
-                    toAccount.deposit(amount);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                    System.out.println(getName() + " was interrupted.");
-                }
+                fromAccount.withdraw(amount);
+                toAccount.deposit(amount);
 
                 System.out.println(
                         getName() + " transferred " +
