@@ -43,29 +43,19 @@ public class TransferThread extends Thread {
 
             synchronized (secondAccount) {
 
-                try {
+                System.out.println(
+                        getName() +
+                        " is transferring " +
+                        amount
+                );
 
-                    System.out.println(
-                            getName() +
-                            " is transferring " +
-                            amount
-                    );
+                fromAccount.withdraw(amount);
+                toAccount.deposit(amount);
 
-                    fromAccount.withdraw(amount);
-                    toAccount.deposit(amount);
-
-                    System.out.println(
-                            getName() +
-                            " completed the transfer."
-                    );
-
-                } catch (InterruptedException e) {
-
-                    System.out.println(
-                            getName() +
-                            " was interrupted."
-                    );
-                }
+                System.out.println(
+                        getName() +
+                        " completed the transfer."
+                );
             }
         }
     }
